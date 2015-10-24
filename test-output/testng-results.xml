@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="36756" started-at="2015-10-24T03:27:08Z" finished-at="2015-10-24T03:27:45Z">
+    <groups>
+    </groups>
+    <test name="facebook" duration-ms="36756" started-at="2015-10-24T03:27:08Z" finished-at="2015-10-24T03:27:45Z">
+      <class name="com.appium.facebook.SampleProject.Facebook">
+        <test-method status="PASS" signature="appiumSetup()[pri:0, instance:com.appium.facebook.SampleProject.Facebook@6aaa5eb0]" name="appiumSetup" is-config="true" duration-ms="15991" started-at="2015-10-23T20:27:08Z" finished-at="2015-10-23T20:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetup -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.appium.facebook.SampleProject.Facebook@6aaa5eb0]" name="LoginTest" duration-ms="19337" started-at="2015-10-23T20:27:24Z" data-provider="logindata" finished-at="2015-10-23T20:27:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.appium.facebook.SampleProject.Facebook@6aaa5eb0]" name="closeDriver" is-config="true" duration-ms="1404" started-at="2015-10-23T20:27:44Z" finished-at="2015-10-23T20:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.appium.facebook.SampleProject.Facebook -->
+    </test> <!-- facebook -->
+  </suite> <!-- Suite1 -->
+</testng-results>

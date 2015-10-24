@@ -10,10 +10,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.appium.facebook.DataProvider.FacebookDataProvider;
 import com.appium.facebook.pageobjects.FaceBookLoginPage;
 
 public class Facebook {
@@ -38,11 +38,12 @@ public class Facebook {
 	}
 	
 	
-	@Test
-	public void LoginTest() throws InterruptedException{
+	@Test(dataProviderClass=FacebookDataProvider.class,dataProvider="logindata")
+	public void LoginTest(String email,String password) throws InterruptedException{
+	
 		Thread.sleep(5000);
 		FaceBookLoginPage login=new FaceBookLoginPage(dr);
-		login.loginFacebook("email","pass");
+		login.loginFacebook(email,password);
 
 	}
 	
